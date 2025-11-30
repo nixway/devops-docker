@@ -23,6 +23,6 @@ EXPOSE 8080
 WORKDIR /var/lib/tomcat9/webapps
 
 RUN rm -rf /boxfuse
-RUN apt purge git maven -yc
+RUN apt purge git maven -y && apt autopurge -y
 
 CMD ["catalina.sh", "run"]
