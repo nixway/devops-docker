@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ENV TZ=Asia/Amaty
+ENV TZ=Asia/Almaty
 WORKDIR /boxfuse
 
 RUN apt update
